@@ -1,0 +1,178 @@
+body {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:visited { /* всі посилання робимо чорними */
+    color: black;
+}
+.link-top { /* для лінків у правому верхньому куті */
+    margin: 15px;
+    text-align: right;
+}
+.link-top > a {  /* там де є тег "а" між словами відступ 15пх */
+    padding: 15px;
+}
+.link-search-advanced { /* Для розширенного пошуку */
+	margin-top: 20px;
+	margin-left: 20px;
+/*    margin-bottom: 100px; */
+}
+.image-logo img { /* для розширенного пошуку логотип гугла розміщуємо ліворуч */
+    float: left;
+}
+.test { /* для розштренного пошуку посилання на головну сторінку розміщуємо праворуч */
+    float: right;
+    padding: 15px;
+}
+.form-input { /* між тегами форм */
+    text-align: center;
+    margin-top: 10%;
+}
+.word-picture {
+    margin-left: 230px;
+    font-size: 20px;
+    color: blue;
+}
+.string-search { /* строка для введення пошукової фрази */
+    border-radius: 20px;
+    height: 35px;
+    width: 40%;
+    padding-left: 40px;
+    border: 1px solid rgb(222, 220, 220);
+    margin-top: 20px;
+    background: url('search.png') no-repeat center left 10px;
+}
+.string-search:hover { /* задаємо тінь при наведенні миши на строку пошуку */
+    box-shadow: 3px 3px 3px 3px #c7c0c044;
+}
+.button-google-search {
+    text-align: center;
+    margin-top: 20px;
+}
+.button-search { /* задаємо стилі для "кнопок" пошуку */
+    font-size: 15px;
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(247, 250, 252);
+}
+.button-search-image { /* задаємо стилі для "кнопок" пошуку */
+    font-size: 15px;  
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(247, 250, 252);
+}
+.button-search-image:hover { /* трохи змінюємо "кнопки" при наведенні мишою */
+    border: 1px solid rgb(196, 193, 193);
+    background: rgb(246, 244, 244);
+    border-radius: 5px;
+}
+.button-search:hover { /* трохи змінюємо "кнопки" при наведенні мишою */
+    border: 1px solid rgb(196, 193, 193);
+    background: rgb(246, 244, 244);
+    border-radius: 5px;
+}
+.string-search-advanced { /* строка для введення пошукової фрази для сторінки розширенного пошуку */
+    height: 30px;
+    width: 95%;  /* ширина поля пошуку для введення пошукової фрази */
+    padding-left: 20px;
+    border: 1px solid rgb(222, 220, 220);
+}
+.input-form-advanced {
+    padding-top: 80px; 
+}
+.button-search-advanced { /* задаємо стилі для "кнопки" пошуку в розширенному пошуку*/
+    font-size: 15px;
+    padding: 12px;
+    margin-left: 60%;
+    margin-top: 50px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(55, 55, 184);
+    color: white;
+}
+.button-search-advanced:hover {
+    background: linear-gradient(to bottom, #2d65ba 3%, #306fcf 94%);
+	border: 1px solid #2658a3;
+}
+table {
+    width: 90%; /* ширина таблиці */
+}
+tr, td {
+    text-align: left; /* вирявнюємо ліворуч */
+    padding-left: 15px;
+    padding-bottom: 15px; /* відступаємо знизу, задаємо відстань між рядками */
+/*    border: 1px solid black; */
+}
+/*
+th {
+    border: 1px solid black;
+}
+*/
+#id1 {
+    width: 10%;
+    padding-bottom: 30px; /* відступаємо знизу між першою та другою строчками */
+    padding-left: 15px;
+    /*padding-right: 15px; */
+    font-size: 15px;
+}
+#id2 {
+    width: 35%;
+}
+#id3 {
+    width: 15%;
+    text-align: left;
+}
+.last-field {
+    padding-left: 15px;
+}
+.last-field-move {
+    margin-top: 5px;
+}
+@media (max-width: 850px) {
+    .last-field, .last-field-move {
+        display: none;
+    }
+    #id3 {
+        display: none;
+    }
+}
+@media (max-width: 1199px) { /* якщо МЕНШЕ ніж 1199пх, то останній стовбець і заголовок не показуємо */
+    .last-field {
+        display: none;
+    }
+    #id3 { /* останній заголовок не показуємо */
+        display: none;
+    }
+    #id2 {
+        width: 50%;
+    }
+    #id1 {
+        width: 15%;
+    }
+    .string-search-advanced {
+        margin-top: 15px;
+    }
+}
+@media (min-width: 1200px) {
+    .last-field-move {
+        display: none;
+    }
+}
+/*
+table {
+    border: 2px solid black;    
+}
+*/
+.headding { /* заголовок "Розширений пошук" */
+    color: red;
+    font-size: 25px;
+    padding-top: 100px;
+    padding-left: 15px;
+}
+.line {
+    color: rgb(247, 238, 238);
+    margin-top: 20px;
+}

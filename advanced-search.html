@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Google Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+            <div class="link-search-advanced">
+                <a href="index.html" class="image-logo">
+                    <img src="../googlelogo_color_272x92dp.png" alt="Image Google" height="30" width="80">
+                </a>
+                <a href="index.html" class="test">Пошук Гугл</a>
+            </div>
+            <div class="headding">Розширений пошук</div>
+            <hr class="line">
+        <form action="https://google.com/search">
+            <div class="input-form-advanced">
+                <table>
+                    <thead>
+                        <th id="id1">Знайти сторінки</th>
+                        <th id="id2"></th> <!-- Залишаємо пустим середній стовбець в заголовку -->
+                        <th id="id3">Як це працює в звичайному режимі</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><label for="word">Зі словами:</label></td>
+                            <td><input type="text" name="as_q" placeholder="Пошук..." class="string-search-advanced"> 
+                                <div class="last-field-move">Введіть ключові слова: пісня про червону калину</div>
+                            </td>
+                            <td class="last-field"><span>Введіть ключові слова: пісня про червону калину</span></td>
+                        </tr>
+                        <tr>
+                            <td><label for="with_the_phrase">Зі словосполученням:</label></td>
+                            <td><input type="text" name="as_epq" placeholder="Пошук..." class="string-search-advanced">
+                                <div class="last-field-move">Зазначте словосполучення у лапках: "пісня про червону калину</div>
+                            </td>
+                            <td class="last-field"><span>Зазначте словосполучення у лапках: "пісня про червону калину"</span></td>
+                        </tr>
+                        <tr>
+                            <td><label for="with_the_phrase">З будь яким з цих слів:</label></td>
+                            <td><input type="text" name="as_oq" placeholder="Пошук..." class="string-search-advanced">
+                                <div class="last-field-move">Вставте оператор OR між словами: пісня OR про OR червону OR калину</div>
+                            </td>
+                            <td class="last-field"><span>Вставте оператор OR між словами: пісня OR про OR червону OR калину</span></td>
+                        </tr>
+                        <tr>
+                            <td><label for="with_the_phrase">Без слів:</label></td>
+                            <td><input type="text" name="as_eq" placeholder="Пошук..." class="string-search-advanced">
+                                <div class="last-field-move">Поставте знак "-" між словами</div>
+                            </td>
+                            <td class="last-field"><span>Поставте знак "-" між словами</span></td>
+                        </tr>
+                    </tbody>
+                </table>    
+
+            </div>    
+                <input type="submit" value="Пошук Гугл" class="button-search-advanced">
+                
+        </form>
+    </body>
+</html>
